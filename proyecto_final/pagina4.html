@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria de Mascotas | Servicios</title>
+    <link rel="shortcut icon" href="img/paw_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url("img/mascota.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        #center img {
+            width: 350px;
+            border-radius: 25%;
+            margin: 30px;
+            transition: transform 500ms;
+        }
+
+        #center img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .contenido img {
+            width: 350px;
+            border-radius: 25%;
+            margin: 30px;
+            transition: transform 1000ms;
+        }
+
+        .contenido img:hover {
+            transform: rotate(15deg);
+        }
+
+        .imagen-borde {
+            width: 350px;
+            border-radius: 25px;
+            border: 5px solid white; /* Cambiamos el color del borde a blanco */
+            background-color: #fffafa; /* Cambiamos el color de fondo del recuadro */
+            margin: 30px;
+        }
+
+        header.cabeza,
+        nav,
+        footer.pie {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 174, 0);
+        }
+
+        main.contenido,
+        main.contenido2 {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .articulos {
+            display: inline-block;
+            width: 400px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .articulos img {
+            max-width: 100%;
+        }
+
+        footer.pie {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer.pie img {
+            margin: 5px;
+        }
+
+        footer.pie h2,
+        footer.pie h3 {
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 5px;
+        }
+
+        footer.pie p {
+            margin: 0;
+            padding: 5px;
+        }
+
+        footer.pie aside {
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabeza">
+        <h1>La veterinaria del gran Waribolillo y Stuart</h1>
+        <div id="subcabeza">«Todo para el bienestar de tus mascotas. ¡Encuentra lo que necesitas!»</div>
+        <br>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina1.html">Inicio</a></li>
+            <li><a href="pagina2.html" class="active">Quien Soy</a></li>
+            <li><a href="pagina3.html">Adopción</a></li>
+            <li><a href="pagina4.html">Servicios</a></li>
+            <li><a href="pagina5.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="contenido">
+        <section class="secciones">
+            <h1>Nuestros Servicios para Mascotas</h1>
+            <p id="seccionp">En nuestra veterinaria, nos preocupamos por el bienestar y la salud de tus mascotas. Ofrecemos una variedad de servicios para asegurarnos de que estén felices y saludables.</p>
+            <article class="articulos" id="derecha">
+                <div>
+                    <h2>Consulta Médica</h2>
+                    <p>Nuestros veterinarios altamente capacitados realizarán exámenes completos para diagnosticar y tratar cualquier problema de salud que puedan tener tus mascotas.</p>
+                </div>
+                <div class="contenedor">
+                    <img src="https://i.pinimg.com/originals/23/f4/33/23f4338d19f68985ef6b1074f16075c0.jpg" class="centrado imagen-borde">
+                </div>
+            </article>
+            <article class="articulos">
+                <img src="https://selecciones.com.mx/wp-content/uploads/2016/09/checa-las-vacunas-importantes-de-tu-mascota.jpg" class="centrado imagen-borde">
+                <div>
+                    <h2>Vacunación</h2>
+                    <p>Mantén a tus mascotas protegidas contra enfermedades con nuestro programa de vacunación. Nuestros veterinarios te asesorarán sobre las vacunas necesarias para cada etapa de su vida.</p>
+                </div>
+            </article>
+            <article class="articulos" id="derecha">
+                <div>
+                    <h2>Cirugías</h2>
+                    <p>Realizamos cirugías veterinarias seguras y efectivas. Desde esterilizaciones hasta procedimientos más complejos, tu mascota estará en buenas manos con nuestro equipo.</p>
+                </div>
+                <div>
+                    <img src="https://www.clinicaveterinariamh.com/wp-content/uploads/2019/11/2931654-1024x683.jpg" class="centrado imagen-borde">
+                </div>
+            </article>
+            <article class="articulos">
+                <img src="https://www.veterinariadogtor.com/pictures/pages/20/Odontologia.jpg" class="centrado imagen-borde">
+                <div>
+                    <h2>Odontología Veterinaria</h2>
+                    <p>La salud dental es importante para el bienestar de tu mascota. Realizamos limpiezas dentales y tratamientos para mantener sus dientes y encías en óptimas condiciones.</p>
+                </div>
+            </article>
+            <article class="articulos" id="derecha">
+                <div>
+                    <h2>Emergencias</h2>
+                    <p>Estamos disponibles para atender emergencias veterinarias. Si tu mascota necesita atención médica urgente, no dudes en contactarnos.</p>
+                </div>
+                <div>
+                    <img src="https://de10.com.mx/sites/default/files/2020/09/17/kit_emergencia_mascotas.jpg" class="centrado imagen-borde">
+                </div>
+            </article>
+            <article class="articulos">
+                <img src="https://comoeducarauncachorro.com/blog/wp-content/uploads/144.jpg" class="centrado imagen-borde">
+                <div>
+                    <h2>Estética y Peluquería</h2>
+                    <p>Cuida el aspecto de tu mascota con nuestros servicios de estética y peluquería. Baños, cortes de pelo y más para que luzcan siempre radiantes.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="pie">
+        <aside>
+            <h2>Síguenos:</h2>
+            <img src="img/facebook.png">
+            <img src="img/instagram.png">
+            <img src="img/tik-tok.png">
+            <img src="img/youtube.png">
+        </aside>
+        <aside>
+            <h3>Aviso de privacidad</h3>
+            <h3>Promociones</h3>
+            <h3>Libro de Reclamaciones</h3>
+        </aside>
+        <aside>
+            <p>© Derechos de autor Veterinaria de Mascotas 2023</p>
+            <p>Veterinaria de Mascotas S.A.C - RUC 98765432101</p>
+        </aside>
+    </footer>
+</body>
+
+</html>

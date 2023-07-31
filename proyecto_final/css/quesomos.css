@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/mascota.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#center img {
+    width: 350px;
+    border-radius: 25%;
+    margin: 30px;
+    transition: transform 500ms;
+}
+
+#center img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.contenido img {
+    width: 350px;
+    border-radius: 25%;
+    margin: 30px;
+    transition: transform 1000ms;
+}
+
+.contenido img:hover {
+    transform: rotate(15deg);
+}
+
+.imagen-borde {
+    width: 350px;
+    border-radius: 25px;
+    border: 5px solid white; /* Cambiamos el color del borde a blanco */
+    background-color: #333; /* Cambiamos el color de fondo del recuadro */
+    margin: 30px;
+}
+
+header.cabeza,
+nav,
+footer.pie {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+main.contenido,
+main.contenido2 {
+    padding: 30px;
+    text-align: center;
+}
+
+.articulos {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    text-align: left;
+}
+
+.articulos img {
+    max-width: 100%;
+}
+
+footer.pie {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer.pie img {
+    margin: 5px;
+}
+
+footer.pie h2,
+footer.pie h3 {
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+footer.pie p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer.pie aside {
+    display: inline-block;
+    padding: 5px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Veterinaria XYZ</title>
+    <link rel="shortcut icon" href="img/veterinaria_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Contactos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+       body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url("img/mascota.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        #center img {
+            width: 350px;
+            border-radius: 25%;
+            margin: 30px;
+            transition: transform 500ms;
+        }
+
+        #center img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .contenido img {
+            width: 350px;
+            border-radius: 25%;
+            margin: 30px;
+            transition: transform 1000ms;
+        }
+
+        .contenido img:hover {
+            transform: rotate(15deg);
+        }
+
+        .imagen-borde {
+            width: 350px;
+            border-radius: 25px;
+            border: 5px solid white; /* Cambiamos el color del borde a blanco */
+            background-color: #fffafa; /* Cambiamos el color de fondo del recuadro */
+            margin: 30px;
+        }
+
+        header.cabeza,
+        nav,
+        footer.pie {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 174, 0);
+        }
+
+        main.contenido,
+        main.contenido2 {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .articulos {
+            display: inline-block;
+            width: 400px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .articulos img {
+            max-width: 100%;
+        }
+
+        footer.pie {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer.pie img {
+            margin: 5px;
+        }
+
+        footer.pie h2,
+        footer.pie h3 {
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 5px;
+        }
+
+        footer.pie p {
+            margin: 0;
+            padding: 5px;
+        }
+
+        footer.pie aside {
+            display: inline-block;
+            padding: 5px;
+        }
+  </style>
+</head>
+<body>
+  <header class="cabeza">
+    <h1>La veterinaria del gran Waribolillo y Stuart</h1>
+    <div id="subcabeza">«Todo para el bienestar de tus mascotas. ¡Encuentra lo que necesitas!»</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="pagina1.html">Inicio</a></li>
+      <li><a href="pagina2.html" class="active">Quien Soy</a></li>
+      <li><a href="pagina3.html">Adopción</a></li>
+      <li><a href="pagina4.html">Servicios</a></li>
+      <li><a href="pagina5.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <main class="contenido">
+    </header>
+    <section class="secciones">
+      <article class="articulos">
+        <h1>CONTÁCTANOS</h1>
+        <p style="font-weight: bolder;">PUEDES PONERTE EN CONTACTO CON NOSOTROS A TRAVÉS DEL FORMULARIO QUE ENCONTRARÁS A CONTINUACIÓN:</p>
+        <form>
+          <label for="fname">Nombre (Requerido)</label><br>
+          <input type="text" name="fname" id="fname" placeholder="Su nombre completo..."><br><br>
+          
+          <label for="email">Email (Requerido)</label><br>
+          <input type="text" name="email" id="email" placeholder="Su email..."><br><br>
+          
+          <label for="telf">Teléfono (Opcional)</label><br>
+          <input type="text" name="telf" id="telf" placeholder="Su teléfono..."><br><br>
+          
+          <label for="pais">País (Requerido)</label>
+          <label for="veterinario">Veterinario (Requerido)</label>
+          <select name="pais" id="pais">
+            <option value="">Perú</option>
+            <option value="">Argentina</option>
+            <option value="">México</option>
+            <option value="">Ecuador</option>
+            <option value="">Chile</option>
+            <option value="">Bolivia</option>
+          </select>
+          <select name="veterinario" id="veterinario">
+            <option value="">Dr. Pérez</option>
+            <option value="">Dra. Rodríguez</option>
+            <option value="">Dr. Gómez</option>
+            <option value="">Dra. López</option>
+            <option value="">Dr. Martínez</option>
+          </select><br><br>
+          
+          <label for="mens">Mensaje</label><br>
+          <textarea name="mens" id="mens" cols="55" rows="10" placeholder="Redacte aquí..."></textarea><br><br>
+          
+          <input type="button" value="Enviar">
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <aside>
+      <h2>Síguenos:</h2>
+      <img src="img/facebook.png">
+      <img src="img/instagram.png">
+      <img src="img/tik-tok.png">
+      <img src="img/youtube.png">
+    </aside>
+    <aside>
+      <h3>Aviso de privacidad</h3>
+      <h3>Promociones</h3>
+      <h3>Libro de Reclamaciones</h3>
+    </aside>
+    <aside>
+      <p>© Derechos reservados Veterinaria XYZ 2023</p>
+      <p>Veterinaria XYZ S.A.C - RUC: XXXXXXXXX</p>
+    </aside>
+  </footer>
+</body>
+</html>

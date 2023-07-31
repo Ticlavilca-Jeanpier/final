@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Mascotas</title>
+    <link rel="stylesheet" href="css/mascotas.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+  body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/mascota.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.imagen-borde {
+    width: 350px;
+    border-radius: 25px;
+    border: 5px solid white; /* Cambiamos el color del borde a blanco */
+    background-color: #333; /* Cambiamos el color de fondo del recuadro */
+    margin: 30px;
+}
+
+header.cabeza,
+nav,
+footer.pie {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+main.contenido,
+main.contenido2 {
+    padding: 30px;
+    text-align: center;
+}
+
+.articulos {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    text-align: left;
+}
+
+.articulos img {
+    max-width: 100%;
+}
+
+footer.pie {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer.pie img {
+    margin: 5px;
+}
+
+footer.pie h2,
+footer.pie h3 {
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+footer.pie p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer.pie aside {
+    display: inline-block;
+    padding: 5px;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/mascota.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.mascota-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mascota-card {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+.mascota-card img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 500ms;
+}
+
+.mascota-card img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.mascota-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mascota-card p {
+    font-size: 18px;
+}
+
+.mascota-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.mascota-card button:hover {
+    background-color: #FFD700;
+}
+    </style>
+</head>
+<body>
+    <header class="cabeza">
+        <h1>La veterinaria del gran Waribolillo y Stuart</h1>
+        <div id="subcabeza">«Todo para el bienestar de tus mascotas. ¡Encuentra lo que necesitas!»</div>
+        <br>
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina1.html">Inicio</a></li>
+            <li><a href="pagina2.html" class="active">Quien Soy</a></li>
+            <li><a href="pagina3.html">Adopción</a></li>
+            <li><a href="pagina4.html">Servicios</a></li>
+            <li><a href="pagina5.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+ 
+    <main class="contenido">
+        <h1>Mascotas para Adopción</h1>
+        <div class="mascota-container">
+            <!-- Datos de la primera mascota - Perro 1 -->
+            <div class="mascota-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Labrador-retriever.jpg" alt="Perro 1">
+                <h2>Rocky</h2>
+                <p>Edad: 3 años</p>
+                <p>Raza: Labrador Retriever</p>
+                <p>Descripción: Rocky es un perro enérgico y amigable. Le gusta jugar a la pelota y pasear al aire libre. Es ideal para familias activas.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la segunda mascota - Gato 1 -->
+            <div class="mascota-card">
+                <img src="https://besthqwallpapers.com/Uploads/10-11-2018/71358/thumb2-4k-british-shorthair-boekh-domestic-cat-gray-cat.jpg" alt="Gato 1">
+                <h2>Milo</h2>
+                <p>Edad: 2 años</p>
+                <p>Raza: Gato doméstico de pelo corto</p>
+                <p>Descripción: Milo es un gato cariñoso y juguetón. Le encanta cazar juguetes y recibir caricias. Es ideal para hogares tranquilos.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la tercera mascota - Perro 2 -->
+            <div class="mascota-card">
+                <img src="https://demascotas.info/wp-content/uploads/2018/03/french-bulldog-1420740_1280.jpg" alt="Perro 2">
+                <h2>Lola</h2>
+                <p>Edad: 2 años y medio</p>
+                <p>Raza: Bulldog Francés</p>
+                <p>Descripción: Lola es una perrita tranquila y cariñosa. Le gusta descansar en el sofá y dar paseos cortos. Es perfecta para hogares relajados.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la cuarta mascota - Gato 2 -->
+            <div class="mascota-card">
+                <img src="https://cf.ltkcdn.net/gatos/images/orig/253369-1600x1030-tipos-gatos-domesticos-pelo-largo.jpg" alt="Gato 2">
+                <h2>Simón</h2>
+                <p>Edad: 1 año y medio</p>
+                <p>Raza: Gato doméstico de pelo largo</p>
+                <p>Descripción: Simón es un gato curioso y juguetón. Le gusta explorar y observar todo a su alrededor. Es ideal para hogares con espacio para jugar.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la quinta mascota - Perro 3 -->
+            <div class="mascota-card">
+                <img src="https://so-pet.com/wp-content/uploads/2016/11/pexels-photo-24871.jpg" alt="Perro 3">
+                <h2>Rufus</h2>
+                <p>Edad: 4 años</p>
+                <p>Raza: Golden Retriever</p>
+                <p>Descripción: Rufus es un perro leal y protector. Le encanta pasar tiempo con su familia y proteger el hogar. Es perfecto para familias con niños.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la sexta mascota - Gato 3 -->
+            <div class="mascota-card">
+                <img src="https://c.pxhere.com/photos/2b/fc/photo-51631.jpg!d" alt="Gato 3">
+                <h2>Lulu</h2>
+                <p>Edad: 3 años</p>
+                <p>Raza: Gato doméstico de pelo corto</p>
+                <p>Descripción: Luna es una gata tranquila y cariñosa. Le gusta tomar siestas largas y recibir mimos. Es ideal para hogares relajados.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la séptima mascota - Perro 4 -->
+            <div class="mascota-card">
+                <img src="https://www.hogarmania.com/archivos/201711/mascotas-perros-razas-pastor-aleman-XxXx80.jpg" alt="Perro 4">
+                <h2>Bruno</h2>
+                <p>Edad: 2 años</p>
+                <p>Raza: Pastor Alemán</p>
+                <p>Descripción: Bruno es un perro inteligente y obediente. Le encanta aprender nuevos trucos y cuidar de su familia. Es ideal para hogares con experiencia en perros.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+
+            <!-- Datos de la octava mascota - Gato 4 -->
+            <div class="mascota-card">
+                <img src="https://thumbs.dreamstime.com/b/gato-dom%C3%A9stico-del-pelo-corto-13579327.jpg" alt="Gato 4">
+                <h2>Mia</h2>
+                <p>Edad: 1 año</p>
+                <p>Raza: Gato doméstico de pelo corto</p>
+                <p>Descripción: Mia es una gata juguetona y curiosa. Le gusta perseguir plumas y explorar rincones. Es perfecta para hogares con entretenimiento para gatos.</p>
+                <button onclick="contactar()">¡Adoptar!</button>
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <!-- ... (contenido del pie de página) ... -->
+    </footer>
+    <!-- JavaScript para manejar el botón de adoptar (cambia esto por tu lógica real) -->
+    <script>
+        function contactar() {
+            alert("¡Gracias por tu interés en adoptar! Por favor, contáctanos para más información.");
+        }
+    </script>
+</body>
+
+</html>
